@@ -61,5 +61,11 @@
 
 const angA = 50;
 const angB = 70;
-const angC = 60;
+const angC = 70;
 
+if(angA + angB + angC == 180){
+    console.log("true");
+}
+else {
+    console.log("false");
+}
