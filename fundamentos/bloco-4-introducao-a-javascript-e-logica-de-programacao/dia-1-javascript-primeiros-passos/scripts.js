@@ -183,9 +183,68 @@
 
 // Exercício 10
 
-const custoProduto = 100;
-const valorVenda = 200;
+// const custoProduto = -1;
+// const valorVenda = 200;
 
-let custoImposto = custoProduto*1.2;
+// if (custoProduto < 0 || valorVenda < 0) {
+//     console.log("Error, os valores náo podem ser negativos");
+// }
+// else{
+//     let custoTotal = custoProduto * 1.2;
+//     let valorLucro = ( valorVenda - custoTotal ) * 1000;
+//     console.log("O lucro na venda de 1000 protudos é: "+ valorLucro);
+// }
 
+// Exercício 11
+let salarioBruto = 12000;
+let salarioLiquido = 0;
+let inss = 0;
+let ir = 0;
+
+
+if (salarioBruto <= 1556.94) {
+    inss = salarioBruto - salarioBruto * 0.08;
+    }
+    else if (salarioBruto > 1556.94 && salarioBruto <= 2594.92) {
+        inss = salarioBruto * 9 / 100;
+        console.log("O valor de INSS é: "+inss);
+    }
+    else if (salarioBruto > 2594.92 && salarioBruto <= 5189.82) {
+        inss = salarioBruto * 11 / 100;
+        console.log("O valor de INSS é: "+inss);
+    }
+    else if (salarioBruto > 5189.82) {
+        inss = 570.88;
+        console.log("O valor de INSS é: "+inss);
+    }
+
+if (salarioBruto <= 1903.98){
+    ir = 0;
+    console.log("O valor de IR é: "+ir+" porque a pessoa é isenta de IR");
+    }   
+    else if (salarioBruto > 1903.98 && salarioBruto <= 2826.65){
+        ir = salarioBruto * 7.5 / 100 - 142.80;
+        console.log("O valor de IR é: "+ir+" com um desconto de 142.80");
+    }
+    else if (salarioBruto > 2826.65 && salarioBruto <= 3751.05){
+        ir = salarioBruto * 15 / 100 - 354.80;
+        console.log("O valor de IR é: "+ir+" com um desconto de 354.80");
+    }
+    else if (salarioBruto > 3751.05 && salarioBruto <= 4664.68){
+        ir = salarioBruto * 22.5 / 100 - 636.13;
+        console.log("O valor de IR é: "+ir+" com um desconto de 636.13");
+    }
+    else if (salarioBruto > 4664.68){
+        ir = salarioBruto * 27.5 / 100 - 869.36;
+        console.log("O valor de IR é: "+ir+" com um desconto de 869.36");
+    }
+
+
+
+salarioLiquido = salarioBruto - inss - ir;
+
+// https://www.youtube.com/watch?v=nLDWeTz3Zgc
+
+// Math.around will around every thing. Then you need to multiply by the number that you want then divide using dot to specify how much decimal cases you what
+console.log("O salário Líquido é: " + Math.round(salarioLiquido*100)/100.00);
 
