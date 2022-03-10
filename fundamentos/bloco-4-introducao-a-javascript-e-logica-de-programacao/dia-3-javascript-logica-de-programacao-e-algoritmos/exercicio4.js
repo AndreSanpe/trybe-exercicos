@@ -2,9 +2,9 @@
 let biggestNumber = 0;
 
 for (let i = 2; i < 50; i += 1) {
-    if (i % 2 != 0) {
+    if (i % 2 != 0 && i % 3 != 0 && i % 5 != 0 && i % 7 != 0) {
         biggestNumber = i;
-
+    console.log('Número primo: '+biggestNumber);
     }
 }
 console.log('O maior número primo entre 1 e 50 é: ' + biggestNumber);
