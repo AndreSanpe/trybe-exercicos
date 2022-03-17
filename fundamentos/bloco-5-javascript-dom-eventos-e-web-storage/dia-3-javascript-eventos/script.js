@@ -33,20 +33,29 @@ function createDaysOfMonth() {
     
         ulFather.appendChild(dayListDays);
     }
-
-   
 }
+createDaysOfMonth();
 
 
-createDaysOfMonth(nameButton);
-
-function createVacation(){
+function createVacation(nameButton){
     const buttonBtn = document.createElement('button');
     buttonBtn.innerText = nameButton;
     buttonBtn.id = 'btn-holiday';
     document.querySelector('.buttons-container').appendChild(buttonBtn);
 
 }
+createVacation('Feriados');
 
-createVacation('Feriado');
+function changingButton(){
+    const buttonBtn = document.getElementById('btn-holiday');
+    buttonBtn.addEventListener('click', function(){
+        
+        for(let i = 0; )
+        if(document.querySelector('.holiday')){
+            buttonBtn.style.background = 'green';
+            document.querySelector('.holiday').style.background = 'green';
+        }        
+    })
+}
 
+changingButton();
