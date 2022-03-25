@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+header {
+  background-color: rgb(240, 241, 242);
+  text-align: center;
+  border: solid rgb(211, 212, 213) 1px;
+  border-radius: 5px;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+main {
+  margin: auto;
+  background-color: rgb(240, 241, 242);
+  border: solid rgb(211, 212, 213) 1px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+}
+
+form label input {
+  padding: 5px;
+  margin-bottom: 40px;
+}
+#user-answer{
+    resize: none;
+}
+footer{
+    margin: auto;
+    width: 80%;
+    background-color: rgb(240, 241, 242);
+    border: solid rgb(211, 212, 213) 1px;
+    padding: 20px;
+}

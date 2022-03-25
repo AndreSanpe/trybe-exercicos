@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+    <title>TrybeTrip</title>
+</head>
+
+<body>
+    <header>
+        <h1>Trybe Trip</h1>
+        <p><em>Formulário para concorrer a uma viagem toda paga pela <b>Trybe!</b></em></p>
+    </header>
+    <main>
+        <form action="" method="get">
+            <label for="input-name">
+                Nome: <input type="text" name="user-name" id="input-name" placeholder="Digite seu nome" maxlength="40"
+                    minlength="10">
+            </label>
+            <br>
+            <label for="input-email">
+                E-mail: <input type="email" name="user-email" id="input-email" placeholder="Digite seu email"
+                    maxlength="50" minlength="10">
+            </label>
+            <br>
+            <label for="input-destination">
+                <input type="radio" id="input-destination" name="destination" value="city"> Cidade
+            </label>
+            <label for="input-destination">
+                <input type="radio" id="input-destination" name="destination" value="farm"> Campo
+            </label>
+            <label for="input-destination">
+                <input type="radio" id="input-destination" name="destination" value="beach"> Praia
+            </label>
+            <label for="input-destination">
+                <input type="radio" id="input-destination" name="destination" value="mountain"> Montanhas
+            </label>
+            <br>
+            <label for=""> Espaço para digitar a resposta:
+                <br>
+                <textarea name="user-answer" id="user-answer" cols="40" rows="10" maxlength="500" placeholder="coloque aqui seu texto de no máximo 500 caractéres"></textarea>
+            </label>
+            <br>
+            <label for="date-trip">Qual a melhor data para realizar sua viagem?
+                <input type="date" id="date-trip" name="date">
+            </label>
+            <br>
+            <label for="check-email">
+                <input type="checkbox" id="check-email" name="email" value="true">
+                Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+            </label>
+            <br>
+            <label for="check-agreement">
+                <input type="checkbox" id="check-agreement" name="agreement" value="true" checked="true">
+                Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+            </label>
+            <br>
+            <button type="submit" id="btn-clear">Enviar Formulário</button>
+            <input type="reset">
+        </form>
+    </main>
+    <footer id="">
+        <small>Todos os direitos reservados, André</small>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
