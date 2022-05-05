@@ -1,4 +1,6 @@
 import './App.css';
+import Header from './Header';
+
 
 // const Task = ({value}) => {
 //   return (
@@ -23,6 +25,7 @@ function App() {
         {taskList.map((tasks, index) => (
           <ol key={index}>{task(tasks)}</ol>
         ))}
+        {Header()}
       </div>
 
       {/* {task('Hello world')} */}
