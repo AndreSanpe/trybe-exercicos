@@ -1,15 +1,12 @@
 {
-  "name": "hello-world",
+  "name": "dia-1-nodejs-runtime-assincrono",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start":"node ."
   },
   "author": "andre",
-  "license": "ISC",
-  "dependencies": {
-    "readline-sync": "^1.4.10"
-  }
+  "license": "ISC"
 }
